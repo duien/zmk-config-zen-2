@@ -52,7 +52,7 @@
     nav_layer {
       label = "ARROW";
       bindings = <
-        &none &kp TAB &kp BSPC &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE       &none &none &kp UP &none &kp BSPC &none
+        &none &kp TAB &kp BSPC &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE       &none &none &kp UP &none &kp BSPC &none
         &none &sk LSHIFT &sk LALT &sk LCTRL &sk LCMD &none                &none &kp LEFT &kp DOWN &kp RIGHT &none &none
         &none &kp ESC &none &none &none &none                             &none &none &none &none &none &none
                      &trans &mo CONFIG &trans                             &trans &trans &trans
