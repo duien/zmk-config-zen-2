@@ -4,8 +4,7 @@
 
 / {
   chosen {
-    zmk,matrix_transform = &default_transform;
-    //zmk,matrix_transform = &five_column_transform;
+    zmk,matrix_transform = &five_column_transform;
   };
 };
 
@@ -22,50 +21,50 @@
     default_layer {
       label = "COLMAK";
       bindings = <
-        &none &kp Q &kp W &kp F &kp P &kp B        &kp J &kp L &kp U &kp Y &kp SEMI &none
-        &none &kp A &kp R &kp S &kp T &kp G        &kp M &kp N &kp E &kp I &kp O &none
-        &none &kp Z &kp X &kp C &kp D &kp V        &kp K &kp H &kp COMMA &kp DOT &kp ENTER &none
-                &kp LCMD &mo SYM &kp LSHIFT        &kp SPACE &mo NAV &kp LCTRL
+        &kp Q &kp W &kp F &kp P &kp B        &kp J &kp L &kp U &kp Y &kp SEMI
+        &kp A &kp R &kp S &kp T &kp G        &kp M &kp N &kp E &kp I &kp O
+        &kp Z &kp X &kp C &kp D &kp V        &kp K &kp H &kp COMMA &kp DOT &kp ENTER
+          &kp LCMD &mo SYM &kp LSHIFT        &kp SPACE &mo NAV &kp LCTRL
         >;
     };
 
     qwerty_layer {
       label = "QWERTY";
       bindings = <
-        &none &kp Q &kp W &kp E &kp R &kp T        &kp Y &kp U &kp I &kp O &kp P &none
-        &none &kp A &kp S &kp D &kp F &kp G        &kp H &kp J &kp K &kp L &kp SEMI &none
-        &none &kp Z &kp X &kp C &kp V &kp B        &kp N &kp B &kp COMMA &kp DOT &kp ENTER &none
-                &kp LCMD &mo SYM &kp LSHIFT        &kp SPACE &mo NAV &kp LCTRL
+        &kp Q &kp W &kp E &kp R &kp T        &kp Y &kp U &kp I &kp O &kp P
+        &kp A &kp S &kp D &kp F &kp G        &kp H &kp J &kp K &kp L &kp SEMI
+        &kp Z &kp X &kp C &kp V &kp B        &kp N &kp B &kp COMMA &kp DOT &kp ENTER
+          &kp LCMD &mo SYM &kp LSHIFT        &kp SPACE &mo NAV &kp LCTRL
         >;
     };
 
     sym_layer {
       label = "SYMBOL";
       bindings = <
-        &none &kp TAB &kp BSPC &kp LBKT &kp RBKT &kp BSLH        &kp FSLH &kp N7 &kp N8 &kp N9 &kp MINUS &none
-        &none &sk LSHIFT &sk LALT &sk LCTRL &sk LCMD &kp GRAVE   &kp SQT &kp N4 &kp N5 &kp N6 &kp EQUAL &none
-        &none &kp ESC &none &kp LPAR &kp RPAR &kp STAR           &kp HASH &kp N1 &kp N2 &kp N3 &kp DOT &none
-                                  &trans &trans &trans           &kp N0 &mo CONFIG &trans
+        &kp TAB &kp BSPC &kp LBKT &kp RBKT &kp BSLH        &kp FSLH &kp N7 &kp N8 &kp N9 &kp MINUS
+        &sk LSHIFT &sk LALT &sk LCTRL &sk LCMD &kp GRAVE   &kp SQT &kp N4 &kp N5 &kp N6 &kp EQUAL
+       &kp ESC &none &kp LPAR &kp RPAR &kp STAR           &kp HASH &kp N1 &kp N2 &kp N3 &kp DOT
+                           &trans &trans &trans           &kp N0 &mo CONFIG &trans
         >;
     };
 
     nav_layer {
       label = "ARROW";
       bindings = <
-        &none &kp TAB &kp BSPC &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE       &none &none &kp UP &none &kp BSPC &none
-        &none &sk LSHIFT &sk LALT &sk LCTRL &sk LCMD &none                &none &kp LEFT &kp DOWN &kp RIGHT &none &none
-        &none &kp ESC &none &none &none &none                             &none &none &none &none &none &none
-                     &trans &mo CONFIG &trans                             &trans &trans &trans
+        &kp TAB &kp BSPC &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE       &none &none &kp UP &none &kp BSPC
+        &sk LSHIFT &sk LALT &sk LCTRL &sk LCMD &none                &none &kp LEFT &kp DOWN &kp RIGHT &none
+        &kp ESC &none &none &none &none                             &none &none &none &none &none
+               &trans &mo CONFIG &trans                             &trans &trans &trans
         >;
     };
 
     config_layer {
       label = "CONFIG";
       bindings = <
-        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4        &none &none &none &none &bt BT_CLR &none
-        &none &none &none &none &none &none                                           &none &none &none &none &none &none
-        &none &none &none &none &none &none                                           &none &none &none &none &none &none
-                       &trans &trans &trans                                           &trans &trans &trans
+        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4        &none &none &none &none &bt BT_CLR
+        &none &none &none &none &none                                           &none &none &none &none &none
+        &none &none &none &none &none                                           &none &none &none &none &none
+                 &trans &trans &trans                                           &trans &trans &trans
         >;
     };
 
