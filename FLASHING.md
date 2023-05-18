@@ -1,12 +1,13 @@
 ## How to easily download firmware and flash
 
-Push you changes to github, then use the following command to watch the build until it's done, then download the resulting firmware into a directory corresponding to the SHA of the current commit.
+Push your changes to github, then use the custom flashing utility to:
+- watch the build until it's done, 
+- then download the resulting firmware into a directory corresponding to the SHA of the current commit,
+- then move the firmware onto the board with prompts for when to connect.
 
-After that, use my custom flashing utility to move the firmware onto the board. When prompted to connect, double-press the reset button to put it into flashing mode before plugging in USB.
+When prompted, double-press the reset button to put it into flashing mode before plugging in USB.
 
 ```fish
-gh run watch --exit-status; and \
-gh run download -D firmware/(git rev-parse --short HEAD) -n firmware; and \
-zen-flash firmware/(git rev-parse --shord HEAD)
+./zen-flash
 ```
 
