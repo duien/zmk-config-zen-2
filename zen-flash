@@ -9,7 +9,7 @@ gh run watch --exit-status && \
     gh run download -D firmware/$CURRENT_SHA -n firmware
 
 # go to firmware download directory
-cd $CURRENT_SHA
+cd firmware/$CURRENT_SHA
 
 if [ ! -f corneish_zen_v2_right-zmk.uf2 ] || [ ! -f corneish_zen_v2_left-zmk.uf2 ]
 then
