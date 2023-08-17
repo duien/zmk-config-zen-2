@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
 / {
   chosen {
@@ -61,10 +62,10 @@
     config_layer {
       label = "CONFIG";
       bindings = <
-        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4        &to COLMAK &to QWERTY &none &none &none
+        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4        &to COLMAK &to QWERTY &none &out OUT_TOG &bt BT_CLR
         &none &none &none &none &none                                           &none &none &none &none &none
         &none &none &none &none &none                                           &none &none &none &none &none
-                 &trans &trans &trans                                           &bt BT_CLR &trans &trans
+                 &trans &trans &trans                                           &trans &trans &trans
         >;
     };
 
