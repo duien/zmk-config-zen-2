@@ -20,7 +20,7 @@
     bt_sel_macro: bt_sel_macro {
       compatible = "zmk,behavior-macro-one-param";
       #binding-cells = <1>;
-      bindings = <&macro_param_1to2>, <&bt BT_SEL MACRO_PLACEHOLDER>;
+      bindings = <&macro_param_1to2>, <&bt BT_SEL 0>;
     };
 };
   behaviors {
