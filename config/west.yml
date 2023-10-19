@@ -7,7 +7,8 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       # revision: main
-      revision: caksoylar/zen-v2
+      # revision: caksoylar/zen-v2
+      revision: caksoylar/zen-8bit
       import: app/west.yml
   self:
     path: config
