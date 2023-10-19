@@ -20,7 +20,7 @@
   nothing: nothing {
       label = "nothing";
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+      #binding-cells = <1>;
       bindings = <&none>;
     };
   };
