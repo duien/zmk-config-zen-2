@@ -16,14 +16,6 @@
 #define CONFIG 4
 
 / {
-  macros {
-  nothing: nothing {
-      label = "nothing";
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <1>;
-      bindings = <&none>;
-    };
-  };
   behaviors {
   bt_hold: behavior_bt_hold {
       compatible = "zmk,behavior-hold-tap";
@@ -31,7 +23,7 @@
       #binding-cells = <2>;
       flavor = "tap-preferred";
       tapping-term-ms = <500>;
-      bindings = <&nothing>, <&bt>;
+      bindings = <&bt>, <&none>;
     };
   };
 
@@ -81,7 +73,7 @@
     config_layer {
       label = "CONFIG";
       bindings = <
-        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4        &to COLMAK &to QWERTY &none &out OUT_TOG &bt_hold 0 BT_CLR
+        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4        &to COLMAK &to QWERTY &none &out OUT_TOG &bt_hold BT_CLR
         &none &none &none &none &none                                           &none &none &none &none &none
         &none &none &none &none &none                                           &none &none &none &none &none
                  &trans &trans &trans                                           &trans &trans &trans
