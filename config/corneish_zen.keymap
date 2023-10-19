@@ -19,11 +19,11 @@
   behaviors {
   bt_hold_reset: behavior_bt_hold_reset {
       compatible = "zmk,behavior-hold-tap";
-      label = "bt_hold";
-      #binding-cells = <0>;
+      label = "bt_hold_reset";
+      #binding-cells = <2>;
       flavor = "tap-preferred";
       tapping-term-ms = <500>;
-      bindings = <&none &bt BT_CLR>;
+      bindings = <&none>, <&bt BT_CLR>;
     };
   };
 
