@@ -16,6 +16,17 @@
 #define CONFIG 4
 
 / {
+  behaviors {
+  bt_hold: behavior_bt_hold {
+      compatible = "zmk,behavior-hold-tap";
+      label = "bt_hold";
+      #binding-cells = <1>;
+      flavor = "tap-preferred";
+      tapping-term-ms = <500>;
+      bindings = &none, <&bt>
+    };
+  };
+
   keymap {
     compatible = "zmk,keymap";
 
