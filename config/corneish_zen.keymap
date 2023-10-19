@@ -16,6 +16,14 @@
 #define CONFIG 4
 
 / {
+  macros {
+  nothing: nothing {
+      label = "nothing";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&none>;
+    };
+  };
   behaviors {
   bt_hold: behavior_bt_hold {
       compatible = "zmk,behavior-hold-tap";
@@ -23,7 +31,7 @@
       #binding-cells = <2>;
       flavor = "tap-preferred";
       tapping-term-ms = <500>;
-      bindings = <&none>, <&bt>;
+      bindings = <&nothing>, <&bt>;
     };
   };
 
