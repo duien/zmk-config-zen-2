@@ -19,6 +19,7 @@
   macros {
     bt_sel_macro: bt_sel_macro {
       compatible = "zmk,behavior-macro-one-param";
+      label = "bt_sel_macro";
       #binding-cells = <1>;
       bindings = <&macro_param_1to2>, <&bt BT_SEL 0>;
     };
